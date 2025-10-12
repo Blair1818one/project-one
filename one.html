@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriLife - Modern Farming</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🌿 AgriLife</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text fade-in">
+      <h1>Empowering Farmers for a Greener Future</h1>
+      <p>Together, we cultivate innovation and sustainability.</p>
+      <a href="#services" class="btn">Explore More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about fade-up">
+    <h2>About Us</h2>
+    <p>
+      At AgriLife, we connect farmers with modern agricultural tools, knowledge,
+      and market opportunities. Our goal is to improve productivity and promote sustainable farming practices.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-boxes">
+      <div class="box fade-up">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=60" alt="Farming Tools">
+        <h3>Modern Equipment</h3>
+        <p>We supply farmers with high-quality, affordable, and smart farming equipment.</p>
+      </div>
+
+      <div class="box fade-up delay">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=60" alt="Training">
+        <h3>Training & Support</h3>
+        <p>We provide professional training to empower farmers with digital and sustainable farming skills.</p>
+      </div>
+
+      <div class="box fade-up delay2">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=60" alt="Market Access">
+        <h3>Market Access</h3>
+        <p>Farmers can access direct market connections to sell their produce and grow their income.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact fade-up">
+    <h2>Contact Us</h2>
+    <p>Get in touch for partnerships or inquiries.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 AgriLife | Designed with 🌱 by MUKISA DAN</p>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-up, .fade-in');
+    window.addEventListener('scroll', () => {
+      fadeElements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+        if (position < screenHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
